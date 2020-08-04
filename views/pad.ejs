@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Markdown Viewer</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="container-fluid">
+
+    <section class="row">
+        <textarea class="col-md-6 full-height" id="pad"># Welcome to Markdown Editor
+## Here is a sample heading
+### Here is another heading
+#### This is a text with list
+- List 1
+- List 2
+- ```this is code``` and is _styled now_. *Its great* to have the [link](as well)
+        
+        </textarea>
+        <div class="col-md-6 full-height" id="markdown"></div>
+    </section>
+
+    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js"></script>
+    <script src="/channel/bcsocket.js"></script>
+    <script src="/share/share.uncompressed.js"></script>
+    <script src="/share/textarea.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
